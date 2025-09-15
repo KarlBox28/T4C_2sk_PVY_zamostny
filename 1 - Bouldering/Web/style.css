@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+nav ul li {
+    display: inline;
+    width: 100%;
+    margin: 5%;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+#logo {
+    margin-right: 35%;
+}
