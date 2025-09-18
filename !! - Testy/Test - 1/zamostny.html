@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 1</title>
+</head>
+<body>
+    <header>
+        <h1>Karel Zámostný</h1>
+        <h1>T4.C sk.2</h1>
+        <h1>B</h1>
+        <hr>
+    </header>
+    <main>
+        <section>
+            <h2>Jakou klíčovou výhodu nám přináší protokol HTTPS oproti HTTP?</h2>
+            <p>Je obousměrně šifrovaný. V případě, že by někdo zachytil komunikaci, viděl by jen tzv. rozsypaný čaj - náhodné znaky, ne skutečná data.</p>
+        </section>
+        <section>
+            <h2>Demonstrujte použití číslovaných seznamů</h2>
+            <ol>
+                <li><p>Otázka 1</p></li>
+                <li><p>Otázka 2</p></li>
+                <li><p>Otázka 3</p></li>
+            </ol>
+        </section>
+        <section>
+            <h2>Jak v HTML vytvoříte element odkazu? Co všechno musí obsahovat? Demonstrujte
+prakticky a slovně popište.</h2>
+            <a href="https://sssvt.cz">tvoří se takto</a>
+            <p>Vytváříme ho pomocí elementu <strong>a</strong>. Musí obsahovat atribut <strong>href</strong>, který definuje kam text odkazu odkazuje.</p>
+        </section>
+        <section>
+            <h2>Vysvětlete, co znamenají zkratky „HTTP“, případně „HTTPS“.</h2>
+            <p>HTTP znamená Hyper Text Transfer Protocol</p>
+            <p>HTTPS znamená Hyper Text Transfer Protocol with SSL</p>
+        </section>
+        <section>
+            <h2>Jaký je rozdíl mezi metodou GET a metodou POST? V jaké situaci využijeme
+metodu POST? Jaké další metody HTTP znáte?</h2>
+            <p>Metoda GET je ta nejběžnější používá ji například prohlížeč, když chce načíst stránku</p>
+            <p>Metoda POST se používá, když chceme stránce naopak něco předat např. data ve formátu JSON, používá se například pro Webhook.</p>
+        </section>
+        <section>
+            <h2>Co jsou to sématické elementy (značky) v HTML? Jaký mají účel?</h2>
+            <p>Sémantické elementy jsou takové, které mají pro stránku nějaký řekněme strukturální význam, např.: section, hX...</p>
+            <p>Oproti tomu nesémantické elementy jsou jen "krabice", které obalují ostatní elementy</p>
+        </section>
+        <section>
+            <h2>Co jsou to HTTP stavové kódy? Uveďte jaké skupiny stavových kódů rozlišujeme a
+u alespoň 2 z nich napište, co nám kódy ve skupině říkají o stavu HTTP požadavku.</h2>
+            <p>Při jakékoliv interakci s webserverem se nám vrací HTTP stavový kód, říká nám v jakém stavu je stránka.</p>
+            <p>Rozlišujeme 5 kategorií těchto kódů:</p>
+            <ul>
+                <li>100 - Informace</li>
+                <li>200 - Successy</li>
+                <li>3OO - Redirecty(přesměrování)</li>
+                <li>400 - Chyby uživatele</li>
+                <li>500 - Chyby serveru</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Co je to atribut u HTML elementu? Uveďte příklad atributu.</h2>
+            <p>Atribut upřesňuje chování nebo vykreslování elementu.</p>
+            <p>Příkladem může být například: href, style, id, class</p>
+        </section>
+        <section>
+            <h2>Jaký je rozdíl mezi CSS vlastnostmi „padding“ a „margin“.</h2>
+            <p>Rozdíl je jednak v umístění, padding je přímo okolo "contentu", zatímco margin je až poslední vrstva. Taktéž se margin běžně používá k nadefinování mezer mezi objekty.</p>
+        </section>
+        <section>
+            <h2>
+            Máme element „div“ o velikosti 50px a marginu 20px. Jak zajistíme, aby byl
+            opravdu širkový 50px? Popište vlastními slovy.
+            </h2>
+            <p>Pokud chceme, aby celková šířka byla 50px, musíme nastavit šířku contentu na 10px. Potom se z každé strany nabalí 20px marginu a celková velikost je 50px.</p>
+            <p>Máme-li nastavený box-sizing na border-box, pak se do šířky - width počítá content, padding a border</p>
+        </section>
+        <section>
+            <h2>
+            BONUS: Uvažujte následující CSS kód. Jaká je celková šířka (width) elementu? Vypište
+            výpočet a odůvodnění. (3 bonusové body)
+            
+            .box {
+            width: 250px;
+            padding: 10px;
+            margin: 5px;
+            box-sizing: content-box;
+            } </h2>
+            <p>Protože máme vlastnost box-sizing nastavenou na content box, platí vlastnost width jenom na samotný tag a ostatní se nabaluje kolem. => šířka = width + padding * 2 + margin * 2 = 250 + 20 10 = 280px</p>
+
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <p>První test z PVY ve čtvrtém ročníku 2025/2026</p>
+    </footer>
+</body>
+</html>

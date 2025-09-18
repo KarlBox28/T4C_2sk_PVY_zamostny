@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 nav ul li {
     display: inline;
@@ -9,7 +10,23 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: black;
+    font-weight: 600;
 }
 #logo {
     margin-right: 35%;
 }
+.blue {
+    color:rgb(1, 184, 184);
+}
+header h1 {
+    text-align: center;
+    font-size: 5rem;
+
+}
+#bouldering-gym {
+    width: 100%;
+}
+#what-is-bouldering {
+    display: inline-flex;
+}
+
