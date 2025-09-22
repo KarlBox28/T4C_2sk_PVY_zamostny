@@ -2,6 +2,10 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+body {
+    width: 50%;
+    margin: auto;
+}
 nav ul li {
     display: inline;
     width: 100%;
@@ -13,20 +17,41 @@ nav ul li a {
     font-weight: 600;
 }
 #logo {
-    margin-right: 35%;
+    text-align: center;
 }
-.blue {
-    color:rgb(1, 184, 184);
+.dark-blue {
+    color:rgba(35, 70, 108);
 }
+.light-blue {
+    color: rgba(70, 118, 171);
+}
+.purple-underline {
+    color: rgba(79, 59, 183);
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
 header h1 {
     text-align: center;
     font-size: 5rem;
 
 }
-#bouldering-gym {
+#simple-steps ol {
+    padding-left: 2%;
+}
+#simple-steps ol li{
+    font-size: 1.2rem;
+}
+#how-to-get-started h2{
+    font-size: 3rem;
+    color: rgba(199, 114, 25);
+}
+#how-to-get-started p {
+    font-size: 1.3rem;
+}
+
+#outdoors {
     width: 100%;
 }
-#what-is-bouldering {
-    display: inline-flex;
-}
+
 
