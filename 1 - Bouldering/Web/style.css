@@ -40,7 +40,7 @@ header h1 {
     padding-left: 2%;
 }
 #simple-steps ol li{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 #how-to-get-started h2{
     font-size: 3rem;
@@ -52,6 +52,16 @@ header h1 {
 
 #outdoors {
     width: 100%;
+}
+
+footer p {
+    text-align: center;
+    font-size: 0.8rem;
+    color: white;
+    padding: 5% 20% 5% 20%;	
+    border: 2px solid rgba(70, 118, 171);
+    background-color: rgba(35, 70, 108);
+    font-size: 1.3rem;
 }
 
 
