@@ -1,0 +1,34 @@
+/**
+- Odstavec (<p>), který je přímým potomkem elementu <header>, obarvěte na šedo (grey).
+- Všechny položky seznamu (<li>), které jsou uvnitř <main>, obarvěte na modro (blue).
+- Odstavec (<p>), který následuje bezprostředně za seznamem (<ul>), udělejte tučným (font-weight: bold).
+- Odkaz (<a>), který je sourozencem seznamu (<ul>), podtrhněte (text-decoration: underline).
+- První položce seznamu (<li>) nastavte background-color na žlutou (yellow).
+- Poslední položce seznamu (<li>) nastavte background-color na oranžovou (orange).
+- Každé sudé položce seznamu (<li>) změňte styl písma na kurzívu (font-style: italic).
+- Když uživatel najede myší na odkaz (<a>), změňte jeho barvu na červenou (red).
+ */
+ header > p {
+    color: grey;
+ }
+ main li {
+    color: blue;
+ }
+ ul + p {
+    font-weight: bold;
+ }
+ ul ~ a {
+    text-decoration: underline;
+ }
+ ul li:first-child {
+    background-color: yellow;
+ }
+ ul li:last-child {
+    background-color: orange;
+ }
+ ul li:nth-child(even) {
+    font-style: italic;
+ }
+ a:hover {
+    color: red;
+ }
