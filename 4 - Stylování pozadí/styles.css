@@ -1,0 +1,80 @@
+/* --- Základní styly (NEMĚNIT) --- */
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Umožní zalamování boxů */
+    gap: 30px;
+    margin-top: 40px;
+}
+.box {
+    width: 250px;
+    height: 250px;
+    border: 2px dashed #999;
+    border-radius: 10px;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+/* --- KONEC NEMĚNITELNÉ ČÁSTI --- */
+
+
+/* === ZDE ZAČÍNÁ VAŠE PRÁCE === */
+
+.ukol-1 {
+    /* ÚKOL 1: Nastavte barvu pozadí na #e74c3c (červená). */
+    background-color: #e74c3c;
+
+}
+
+.ukol-2 {
+    /* ÚKOL 2:
+      1. Nastavte obrázek na pozadí: url('https://images.unsplash.com/photo-1757120377620-4632f183ce79?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
+      2. Zajistěte, aby obrázek pokryl celou plochu boxu bez deformace.
+   */
+   background-image: url('https://images.unsplash.com/photo-1757120377620-4632f183ce79?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+   background-size: contain;
+
+}
+
+.ukol-3 {
+    /* ÚKOL 3 (bez zkratky):
+       Nastavte postupně tyto vlastnosti:
+       - Barvu pozadí na #2c3e50 (tmavě modrá).
+       - Obrázek textury: url('https://www.transparenttextures.com/patterns/stardust.png')
+       - Zajistěte, aby se obrázek neopakoval.
+       - Vycentrujte obrázek (horizontálně i vertikálně).
+    */
+    background-color: #2c3e50;
+    background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.ukol-4 {
+    /* ÚKOL 4:
+       1. Nastavte obrázek pozadí: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400')
+       2. Nastavte velikost tak, aby obrázek pokryl celou plochu.
+       3. Přidejte vlastnost, která způsobí, že pozadí zůstane "přilepené" na místě při rolování stránky (parallax efekt).
+    */
+    background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bonus {
+    background-image: url('https://images.unsplash.com/photo-1758132123976-6730692335f7?q=80&w=1529&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-attachment: fixed;
+    background-size: cover;
+    display: block;
+    height: 500px;
+    width: auto;
+    border: 2px dashed #999;
+    border-radius: 10px;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    text-align: center;
+    margin-top: 30px;
+}
