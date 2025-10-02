@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+header h1 {
+    text-decoration: underline;
+}
+#intro ul a {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#tlacitka button:first-child {
+    margin-right: 30px;
+    color: green;
+}
+
+blockquote span {
+    color: red;
+    font-weight: bold;
+}
