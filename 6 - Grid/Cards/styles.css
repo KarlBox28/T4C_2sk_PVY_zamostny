@@ -1,0 +1,34 @@
+.grid-container {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1.5fr 0.8fr 0.2fr 1fr;
+    grid-template-rows: 1fr 1fr 1.5fr;
+    grid-template-areas: 
+    "max-rew man-car man-car man-car"
+    "max-rew set-gol set-gol loung"
+    "cred-strat cred-strat find-com-app find-com-app";
+}
+#maximize-rewards {
+    grid-area: max-rew;
+    background-color: #f0ecfb;
+}
+#set-goals {
+    grid-area: set-gol;
+    background-color: #fef7db;
+}
+#lounges {
+    grid-area: loung;
+    background-color: #f1f5e4;
+}
+#manage-cards {
+    grid-area: man-car;
+    background-color: #fddfe9;
+}
+#credit-strategy {
+    grid-area: cred-strat;
+    background-color: #fde9de;
+}
+#find-compare-apply {
+    grid-area: find-com-app;
+    background-color: #eef2f5;
+}

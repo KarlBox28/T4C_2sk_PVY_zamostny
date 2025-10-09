@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio layout with CSS Grid</title>
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: "JetBrains Mono", monospace;
+            background-color: #F7F2F2;
+        }
+
+        main > div {
+            background-color: white;
+            padding: 24px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        main {
+            width: 70%;
+            margin: auto;
+            border: solid 3px #F7F2F2;
+            padding: 0;
+        }
+
+        #about p {
+            color: #666;
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        #about img {
+            margin-top: 20px;
+            max-width: 15%;
+        }
+
+        #about h1 {
+            color: #333;
+            font-size: 2.5rem;
+            font-weight: 800;
+        }
+
+        #spotify {
+            background-color: #1ed760;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        #spotify .icon {
+            color: white;
+            width: 30px;
+            height: 30px;
+        }
+
+        #spotify h2 {
+            font-size: 1.2rem;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        #spotify p {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin: 0;
+        }
+
+        #twitter {
+            background-color: #1da1f2;
+            color: white;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+
+        #twitter .icon {
+            color: white;
+            width: 30px;
+            height: 30px;
+        }
+
+        #newsletter {
+            background-color: #e8e8e8;
+            padding: 24px;
+        }
+
+        #newsletter h2 {
+            font-family: "JetBrains Mono", monospace;
+            font-weight: 500;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        #newsletter p {
+            color: #666;
+        }
+
+        #blog h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        #blog p {
+            color: #666;
+            margin: 0;
+        }
+
+        #map, #design-1, #design-2, #design-3, #mode-toggle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div id="about">
+        <p>nev</p>
+        <img src="./assets/emoji.png" alt="">
+        <h1>I'm nev</h1>
+        <p>a developer and product designer from Ireland. I'm interested in React, Node, Product Design, Jamstack, Startups, Cryptocurrencies and Music.</p>
+    </div>
+    <div id="map">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="M12 21.35c-1.48-1.5-6-6.3-6-10.85a6 6 0 0 1 12 0c0 4.55-4.52 9.35-6 10.85zM12 9a2 2 0 1 0 0-4a2 2 0 0 0 0 4z"/></svg>
+    </div>
+    <div id="design-1">
+    </div>
+    <div id="spotify">
+        <p>Now playing</p>
+        <h2>Roy's Tune</h2>
+        <p>Fontaines D.C.</p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm3 14c-.16 0-.32-.08-.41-.24c-.65-1.1-1.63-1.68-2.82-1.84c-1.07-.15-2.22-.04-3.32.31c-.13.04-.26.04-.39 0c-.2-.05-.33-.24-.29-.45c.05-.2.24-.33.45-.29c1.02.26 2.05.35 2.92.23c1.4-.19 2.53-.87 3.32-2.18c.11-.18.3-.29.5-.28c.2.01.38.12.49.3c.03.05.05.12.04.18c-.02.2-.12.3-.28.38c-.28.14-.49.38-.6.67c-.08.2-.1.35-.09.43c.1.4.15.65.15.8c0 .26-.14.4-.33.43c-.2.03-.39-.06-.51-.23z"/></svg>
+    </div>
+    <div id="twitter">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="M22.46 6c-.77.34-1.6.57-2.46.69.88-.53 1.56-1.37 1.88-2.37-.83.5-1.75.85-2.73 1.05-.79-.84-1.92-1.37-3.21-1.37-2.42 0-4.38 1.96-4.38 4.38c0 .34.04.67.11 1.01-3.64-.18-6.86-1.93-9.01-4.57-.38.65-.59 1.41-.59 2.22 0 1.52.77 2.87 1.94 3.66-.71-.02-1.38-.22-1.97-.54v.06c0 2.12 1.51 3.88 3.51 4.29-.37.1-.76.15-1.16.15-.28 0-.54-.03-.8-.08.56 1.74 2.17 3.01 4.08 3.04-1.54 1.21-3.48 1.93-5.59 1.93-.36 0-.71-.02-1.05-.06 2 1.28 4.38 2.02 6.94 2.02 8.33 0 12.89-6.91 12.89-12.89 0-.2 0-.4-.01-.59.9-.65 1.68-1.46 2.3-2.38z"/></svg>
+    </div>
+    <div id="design-2">
+    </div>
+    <div id="mode-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12S6.48 2 12 2zm0 18c4.41 0 8-3.59 8-8s-3.59-8-8-8s-8 3.59-8 8s3.59 8 8 8z"/></svg>
+    </div>
+    <div id="design-3">
+    </div>
+    <div id="blog">
+        <h2>How it started vs. how it's going</h2>
+        <p>A short personal history as it relates to design and development...</p>
+        <p>May 5, 2021</p>
+    </div>
+    <div id="newsletter">
+        <h2>Shall I keep you in the loop?</h2>
+        <p>Content includes articles, early access to products, and ongoing learnings.</p>
+        <input placeholder="Email address"/>
+        <div class="two-col-grid">
+            <button>Subscribe</button>
+            <span>You'll be subscriber number 0</span>
+        </div>
+    </div>
+</main>
+</body>
+</html>
