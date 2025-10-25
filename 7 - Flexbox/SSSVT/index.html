@@ -13,31 +13,52 @@
                 <img src="./src/logo.png" alt="">
                 <figcaption>PROSTĚ NĚCO NAVÍC...</figcaption>
             </figure>
-            <h1>SOUKROMÁ STŘEDNÍ ŠKOLA VÝPOČETNÍ TECHNIKY</h1>
-            <img src="./src/prihlas_icon.png" alt="">
-            <img src="./src/slouceni.png" alt="">
-            <div>
-                <form action="">
-                    <input type="text" name="" id="login">
-                    <input type="password" name="" id="password">
-                    <button>Přihlásit</button>
-                    <div class="kontext">
+            <div id="nazev-stranky-wrap">
+                <div id="nazev-stranky">
+                <span>SOUKROMÁ STŘEDNÍ ŠKOLA</span>
+                <span class="posun">VÝPOČETNÍ TECHNIKY</span>
+            </div>
+            </div>
+            <form action="" class="horni-cast">
+                <div id="prihlas_icon"><img src="./src/prihlas_icon.png" alt=""></div>
+                <div id="slouceni"><img src="./src/slouceni.png" alt=""></div>
+                <div id="prihlaseni-inputy">
+                    <input type="text" name="" id="login" placeholder="-Uživatel-">
+                    <input type="password" name="" id="password" placeholder="-Heslo-">
+                </div>
+                <div class="kontext">
+                    <div>
                         <input id="kontextStranky" checked="" value="stranky" name="kontext" type="radio">
                         <label for="kontextStranky">Student/Učitel</label>
+                    </div>
+                    <div>
                         <input id="kontextWebmail" value="webmail" name="kontext" type="radio">
                         <label for="kontextWebmail">Webmail</label>
+                    </div>
+                    <div>
                         <input id="kontextRodice" value="rodice" name="kontext" type="radio">
                         <label for="kontextRodice">Rodič</label>
                     </div>
-                </form>
-            </div>
+                </div>
+                <button id="prihlasit">Přihlásit</button>
+            </form>
         </div>
         <div id="lower-div">
             <div id="menu">
-
+                <ul>
+                    <li>ÚVOD</li>
+                    <li>INFORMACE O ŠKOLE</li>
+                    <li>PRO UCHAZEČE</li>
+                    <li>PRO STUDENTY</li>
+                    <li>KONTAKTY</li>
+                </ul>
             </div>
             <div id="odkazy">
-
+                <img src="src/entypo-social--facebook.png" alt="">
+                <img src="src/entypo-social--instagram.png" alt="">
+            </div>
+            <div id="search">
+                <input type="text" placeholder="Hledat...">
             </div>
         </div>
     </main>
