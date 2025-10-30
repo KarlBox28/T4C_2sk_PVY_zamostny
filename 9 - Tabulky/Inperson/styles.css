@@ -1,0 +1,55 @@
+.wrapper {
+    max-width: 100vw;
+    overflow-x: scroll;
+}
+table {
+    border-collapse: collapse;
+    font-size: 0.8em;
+    width: 100%;
+    min-width: 1500px;
+}
+table, th, td {
+    border: 1px solid grey;
+    padding: 4px 6px;
+}
+tbody tr:nth-child(even) {
+    background-color: lightblue;
+}
+@media only screen and (max-width: 786px) {
+    .wrapper {
+        overflow: hidden;
+    }
+    table {
+        display: block;
+        width: 100%;
+        min-width: initial;
+    }
+    table, th, td {
+        border: none;
+    }
+    thead {
+        display: none;
+    }
+    tbody tr {
+        display: block;
+        margin-bottom: 15px;
+        border: solid grey;
+        border-radius: 8px;
+    }
+    tbody td {
+        display: block;
+        position: relative;
+        padding: 10px 10px 10px 50%;
+    }
+    tbody td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        text-align: left;
+        font-weight: 600;
+    }
+    tbody tr:nth-child(even) {
+        background-color: initial;
+    }
+}
