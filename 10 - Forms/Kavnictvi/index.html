@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Objednávkový formulář - Nerd’s Coffee & Co.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <img src="./src/logo.svg" alt="Logo Nerd’s Coffee & Co." class="logo">
+      <div class="company-info">
+        <p><strong>Nerd’s Coffee & Co.</strong><br>
+          s.r.o.<br>
+          Lahovcova 245/5<br>
+          Praha 18 - Bubny, 158 00
+        </p>
+      </div>
+    </header>
+
+    <form action="https://nerds-coffee.co/order/neworder.php" method="POST">
+      
+      <div class="row">
+        <div class="form-group">
+          <label for="jmeno">Jméno</label>
+          <input id="jmeno" type="text" name="jmeno" required placeholder="Vaše jméno">
+        </div>
+
+        <div class="form-group">
+          <label for="prijmeni">Příjmení</label>
+          <input id="prijmeni" type="text" name="prijmeni" required placeholder="Vaše příjmení">
+        </div>
+      </div>
+
+      <fieldset>
+        <legend>Adresa fakturační</legend>
+        
+        <div class="form-group">
+          <label for="ulice">Ulice</label>
+          <input id="ulice" type="text" name="ulice" required placeholder="Ulice a číslo">
+        </div>
+
+        <div class="form-group">
+          <label for="cp">ČP</label>
+          <input id="cp" type="number" name="cp" required placeholder="Číslo popisné">
+        </div>
+
+        <div class="form-group">
+            <label for="psc">PSČ</label>
+            <input type="text" id="psc" name="psc" required placeholder="123 45" pattern="^\d{3}\s\d{2}$">
+
+        </div>
+
+        <div class="form-group">
+          <label for="mesto">Město</label>
+          <input id="mesto" type="text" name="mesto" required placeholder="Město">
+        </div>
+      </fieldset>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" required placeholder="email@domena.cz">
+      </div>
+
+      <div class="form-group">
+        <label for="telefon">Tel.</label>
+        <input id="telefon" type="tel" name="telefon" pattern="^\+?[0-9 ]{6,20}$" placeholder="+420 123 456 789">
+      </div>
+
+      <fieldset>
+        <legend>Doručení</legend>
+        <div class="form-group">
+          <label><input type="radio" name="doprava" value="osobni" checked> Osobní odběr P-Karlín</label>
+        </div>
+        <div class="form-group">
+          <label><input type="radio" name="doprava" value="ppl"> PPL (+50 Kč)</label>
+        </div>
+        <div class="form-group">
+          <label><input type="radio" name="doprava" value="dpd"> DPD (+10 Kč)</label>
+        </div>
+      </fieldset>
+
+      <div class="buttons">
+        <button type="reset" class="btn-reset">Reset</button>
+        <button type="submit" class="btn-submit">Odeslat</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
