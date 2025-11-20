@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form>
+            <div>
+                <div class="input-box">
+                    <label for="first-name">First name</label>
+                    <input type="text" name="" id="first-name" placeholder="Enter your first name" required>
+                </div>
+                <div class="input-box">
+                    <label for="last-name">Last name</label>
+                    <input type="text" name="" id="last-name" placeholder="Enter your last name" required>
+                </div>
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="email" name="" id="email" placeholder="Enter your email">
+                </div>
+                <div class="input-box">
+                    <label for="phone-number">Phone number</label>
+                    <input required type="text" name="" id="phone-number" placeholder="Enter your phone number" pattern="^(?:\+420\s?)?[1-9]\d{2}\s?\d{3}\s?\d{3}$" title="Zadejte číslo ve formátu +420 123 456 789 nebo 123 456 789">
+                </div>
+                <div>
+                    <select>
+                        <option value="" disabled selected>Select your country</option>
+                        <option value="cz">Czech Republic</option>
+                        <option value="sk">Slovakia</option>
+                        <option value="pl">Poland</option>
+                        <option value="hu">Hungary</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+
+            <div class="form-validation">
+                <h3>Form Errors</h3>
+                <ul>
+                    <li class="fname-invalid">First name is required</li>
+                    <li class="lname-invalid">Last name is required</li>
+                    <li class="phone-invalid">Phone is required</li>
+                </ul>
+            </div>
+        </form>
+
+
+    </main>
+</body>
+</html>

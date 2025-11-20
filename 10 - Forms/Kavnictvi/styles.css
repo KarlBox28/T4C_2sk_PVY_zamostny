@@ -104,6 +104,8 @@ fieldset input[type="radio"] {
   cursor: pointer;
 }
 
+
+
 label[for]:has(+ input:required)::after {
   content: "*";
   color: #2e1812;
@@ -125,5 +127,15 @@ label[for]:has(+ input:required)::after {
 
   fieldset {
     padding: 1rem 1.5rem;
+  }
+  .fakturacni {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5%;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }

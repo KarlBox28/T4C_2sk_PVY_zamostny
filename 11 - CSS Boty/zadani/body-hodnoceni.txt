@@ -1,0 +1,39 @@
+Obecné
+- využívejte vhodné sémantické elementy (header, main, footer, section, address atd.)
+- použijte správné písmo (font-family), správné velikosti, tloušťky a barvy písma
+- využijte texty, obrázky a ostatní z návrhu - čerpat můžete z přiložených PSD souborů
+- některá místa jsou označena šipkou - jedná se o náhled hover efektu (u ostatních hover efekt navrhněte sami - podtržení, změna barvy apod.)
+- 3 tlačítka dole (vše skladem, doprava zdarma, jak měřit) jsou odkazy a při najetí myši se změní do červena včetně obrázku (viz náhled se šipkou)
+- formulář pro odběr newsletteru se bude odesílat na URL newsletter.php a pole bude povinné a validované na e-mailovou adresu
+- vyhledávací pole v hlavičce bude formulář, který se odešle na search.php při stisknutí enter
+- kliknutí na e-mailové adresy otevře mailového klienta a předvyplní adresu
+
+Obecné - odkazy
+- vše co dává smysl jako odkaz, bude odkaz (tlačítka, menu, e-mail, telefon, drobečková navigace atd.)
+- kliknutí na produkt (kdekoli) - bude odkazem na stránku s nakódovaným návrhem detailu produktu (např. product.html)
+- kliknutí na logo (v hlavičce a patičce) - bude odkazem na stránku s nakódovaným návrhem hlavní stránky (index.html)
+- kliknutí na "přidat do košíku" nebo ikonku košíku - bude odkazem na stránku s nakódvaným návrhem popptávky (např. demand.html)
+- v patičce odkazy na nabídku a kontakty jsou odkazy
+- telefon v hlavičce po kliknutí na mobilu otevře telefonní aplikaci a předvyplní číslo  
+
+Obecné - mobil
+- nezapomeňte meta-viewport tag
+- na mobilní verzi nejsou některé prvky vidět, některé prvky mají jiný obsah nebo velikost
+
+Stránka HP
+- text v banneru bude umístěn v kódu - bude měnitelný
+- banner se nemusí měnit
+- tlačítko v banneru bude odkaz
+
+Stránka detailu produktu
+- odkazy v drobečkové navigaci 
+- obrázky produktu se při kliknutí nemusí měnit
+- u parametrů Barva a Velikost je navržen vzhled pro vybranou hodnotu (modrá a 24) (bude se definovat pomocí class=active)
+- parametry produktu budou tvořené tabulkou 
+
+Stránka poptávka
+- všechna pole jsou povinná, zvolte vhodnou validaci
+- výběr zemí bude ČR a SR
+- způsob platby má grafické radiobuttony
+- tlačítko zpět vás vrátí zpět na HP
+- tlačítko odeslat odešle formulář na daresu demand.php

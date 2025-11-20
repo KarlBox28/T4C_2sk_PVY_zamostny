@@ -1,0 +1,5 @@
+separatni css pro každý soubor + sdilene variables.css, header.css, footer.css
+
+@import "variables.css"
+
+podivat se na web components

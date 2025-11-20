@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+}
+
+.flex {
+    display: flex;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-col {
+    flex-direction: column;
+}
+.gap-sm {
+    gap: var(--space-sm);
+}
+.gap-md {
+    gap: var(--space-md);
+}
+.gap-lg {
+    gap: var(--space-lg);
+}
+form {
+    width: 100%;
+    display: flex;
+    gap: var(--space-sm);
+}
+.input-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+.input-box > label {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.input-box > input {
+    padding: var(--space-sm);
+}
+.input-box > input::placeholder {
+    font-style: italic;
+}
+
+.input-box > label:has(+ input:required)::after {
+    content: "*";
+    color: red;
+    margin-left: 0.2rem;
+} 
+.form-validation  {
+    border: solid 1px red;
+    width: 100%;
+    padding: var(--space-sm);
+    background-color: #ffe6e6;
+    display: none;
+}
+.form-validation ul {
+    list-style-position: inside;
+}
+
+form:has(input:user-invalid) .form-validation {
+    display: block;
+}
+
+.form-validation ul li {
+    display: none;
+}
+
+form:has(input[id="first-name"]:user-invalid) .fname-invalid,
+form:has(input[id="last-name"]:user-invalid) .lname-invalid,
+form:has(input[id="phone-number"]:user-invalid) .phone-invalid {
+    display: list-item;
+}
