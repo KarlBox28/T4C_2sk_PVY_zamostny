@@ -1,0 +1,85 @@
+@import "utility.css";
+@import "variables.css";
+@import "css-reset.css";
+header {
+    font-family: var(--font-family), serif;
+}
+.contact-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: center;
+    color: white;
+    background-color: var(--color-secondary);
+    padding-left: 120px;
+    padding-right: 120px;
+    height: 50px;
+}
+.contact-login figure {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.over-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+.over-navbar div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 350px;
+}
+.over-navbar div img{
+    width: 32px;
+    height: 32px;
+}
+.over-navbar input {
+    background-image: url(../img/loupe.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    height: 34px;
+    width: 210px;
+    border: 1px solid #d6d6d6;
+}
+nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+    margin: auto;
+}
+nav a {
+    text-decoration: none;
+    color: var(--color-tertiary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+nav > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 69px;
+    border-left: 1px solid var(--color-tertiary);
+    border-top: 1px solid var(--color-tertiary);
+    border-bottom: 1px solid var(--color-tertiary);
+}
+nav:last-child {
+    border-right: 1px solid var(--color-tertiary);
+}
+nav div:hover {
+    border-width: 2px;
+    border-color: var(--color-primary);
+    border-right: 2px solid var(--color-primary);
+}
+nav div:hover a {
+    color: var(--color-primary);
+    font-weight: bold;
+}
