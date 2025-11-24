@@ -50,8 +50,6 @@ header {
     border: 1px solid #d6d6d6;
 }
 nav {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
     width: 80%;
     margin: auto;
 }
@@ -62,24 +60,66 @@ nav a {
     align-items: center;
     gap: 0.5rem;
 }
-nav > div {
+nav ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
     height: 69px;
+    width: 100%;
+}
+nav ul li {
     border-left: 1px solid var(--color-tertiary);
     border-top: 1px solid var(--color-tertiary);
     border-bottom: 1px solid var(--color-tertiary);
+    list-style: none;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-nav:last-child {
+nav ul li:hover a {
+    color: var(--color-primary);
+    font-weight: bold;
+}
+nav ul li:last-child {
     border-right: 1px solid var(--color-tertiary);
 }
-nav div:hover {
+nav ul li:hover {
     border-width: 2px;
     border-color: var(--color-primary);
     border-right: 2px solid var(--color-primary);
 }
-nav div:hover a {
+main {
+    margin: auto;
+    width: 80%;
+}
+
+.carousel {
+    margin-top: 23px;
+    background-image: url(../img/kid-nohy-boty.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.carousel div p:first-child {
     color: var(--color-primary);
+    font-size: 24px;
+}
+.carousel div p:nth-child(2) {
+    color: var(--color-secondary);
+    font-size: 52px;
     font-weight: bold;
+}
+
+footer {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    
 }
