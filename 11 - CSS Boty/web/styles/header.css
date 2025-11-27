@@ -1,9 +1,6 @@
 @import "utility.css";
 @import "variables.css";
 @import "css-reset.css";
-header {
-    font-family: var(--font-family), serif;
-}
 .contact-login {
     display: flex;
     flex-direction: row;
@@ -88,36 +85,6 @@ nav ul li:hover {
     border-width: 2px;
     border-color: var(--color-primary);
     border-right: 2px solid var(--color-primary);
-}
-main {
-    margin: auto;
-    width: 80%;
-}
-
-.carousel {
-    margin-top: 23px;
-    background-image: url(../img/kid-nohy-boty.png);
-    background-size: contain;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    height: 450px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-}
-.carousel div p:first-child {
-    color: var(--color-primary);
-    font-size: 24px;
-}
-.carousel div p:nth-child(2) {
-    color: var(--color-secondary);
-    font-size: 52px;
-    font-weight: bold;
-}
-
-footer {
-    display: none;
 }
 
 @media only screen and (max-width: 600px) {
