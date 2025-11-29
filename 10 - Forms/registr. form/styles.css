@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+.col {
+    flex-direction: column;
+}
+.row {
+    flex-direction: row;
+}
+.gap-sm {
+    gap: 1rem;
+}
+.gam-lg {
+    gap: 2rem;
+}
+.form-group {
+    padding: 10px 5px;
+    width: 200px;
+}
+label[for]:has(+ input:required)::after {
+  content: "*";
+  color: red;
+  font-size: 1em;
+  margin-left: 0.2em;
+}
