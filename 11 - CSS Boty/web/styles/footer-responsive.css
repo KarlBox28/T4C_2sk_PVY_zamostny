@@ -30,6 +30,10 @@
     .contact-us > div{
         align-items: center;
     }
+    .contact-form h3, .contact-form p {
+        width: 70%
+    }
+
 }
 @media only screen and (max-width: 430px) {
 

@@ -28,5 +28,11 @@
     }
 }
 @media only screen and (max-width: 430px) {
-
+    .gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+    }
+    .product-category a{
+        font-size: 20px;
+    }
 }
