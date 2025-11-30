@@ -1,3 +1,116 @@
+@import url('variables.css');
 footer {
-    display: none;
+    font-family: 'Libre Franklin', serif;
+}
+
+.contact-form {
+    margin-top: 75px;
+    background-image: url("../z-ps/Vrstva 9.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.contact-form h3 {
+    font-size: 32px;
+    font-weight: bold;
+}
+.contact-form p {
+    font-size: 20px;
+    color: #606060;
+}
+.contact-form form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.contact-form form button {
+    height: 50px;
+    width: 100px;
+}
+.contact-form form input {
+    height: 50px;
+}
+.footer-info {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    height: 440px;
+}
+.footer-info > div:nth-child(1) {
+    background-color: var(--color-primary);
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer-info > div:last-child {
+    background-color: var(--color-secondary);
+    width: 30%;
+}
+.about {
+    width: 280px;
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+.about img {
+    height: auto;
+    width: 120px;
+    filter: brightness(0) invert(1);
+}
+.offerings {
+    margin-top: 45px;
+    width: 330px;
+}
+.offerings > div {
+    display: flex;
+    margin-top: 23px;
+    gap: 100px;
+}
+.offerings-group {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.offerings-group ul{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    list-style: circle;
+}
+.offerings-group h6 {
+    font-size: 16px;
+    font-weight: bold;
+}
+.offerings-group ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.contact-us > div{
+    margin-top: 45px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact-info div {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+.contact-info span {
+    margin-left: 10px;
 }

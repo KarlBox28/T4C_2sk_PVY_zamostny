@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/homepage.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/homepage-responsive.css">
+    <link rel="stylesheet" href="./styles/footer-responsive.css">
     <title>Document</title>
 </head>
 <body>
@@ -21,35 +23,40 @@
                 <figcaption>Přihlásit se</figcaption>
             </figure>
         </div>
-        <div class="over-navbar">
-            <img src="img/Group%204.svg" alt="">
-            <div>
-                <form action="">
-                    <input type="text" placeholder="          Vyhledat zboží...">
-                </form>
-                <img src="./z-ps/Group%206.png" alt="">
-                <img src="./z-ps/heart.png" alt="">
+        <div class="navbar-container">
+            <div class="over-navbar">
+                <img src="img/Group%204.svg" alt="">
+                <div>
+                    <form action="">
+                        <div class="input-wrapper">
+                            <img src="./img/loupe.svg" alt="">
+                            <input type="text" placeholder="Vyhledat zboží...">
+                        </div>
+                    </form>
+                    <img src="./z-ps/Group%206.png" alt="">
+                    <img src="./z-ps/heart.png" alt="">
+                </div>
             </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Chlapecké <img src="img/Group%20169.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#">Dívčí <img src="img/Group%20171.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#">Doplňky</a>
+                    </li>
+                    <li>
+                        <a href="#">Ostatní</a>
+                    </li>
+                    <li class="no-tablet">
+                        <a href="#" class="no-tablet">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Chlapecké <img src="img/Group%20169.svg" alt=""></a>
-                </li>
-                <li>
-                    <a href="#">Dívčí <img src="img/Group%20171.svg" alt=""></a>
-                </li>
-                <li>
-                    <a href="#">Doplňky</a>
-                </li>
-                <li>
-                    <a href="#">Ostatní</a>
-                </li>
-                <li>
-                    <a href="#">Kontakt</a>
-                </li>
-            </ul>
-        </nav>
     </header>
     <main>
         <banner class="carousel">
@@ -87,10 +94,32 @@
         </div>
         <div class="gallery">
             <div class="product-card">
-                <img src="./img2/8291fafa-e3fd-11eb-8d3f-02420a000b23.png" alt="Produkt 1">
-                <p>Dětské tenisky Runster</p>
+                <img src="./img2/15146773-eb93-11eb-9461-02420a000b04.png" alt="Produkt 1">
+                <p>Papučky barefoot hnědé kožené</p>
                 <div class="flex justify-start align-center gap-10">
-                    <span>899 Kč</span>
+                    <span>529 Kč</span>
+                    <span>699 Kč</span>
+                    <div class="flex justify-end align-center">
+                        <a href="./product-detail.html"><img src="./z-ps/Group%206.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./img2/79ec4063-e3fd-11eb-8d3f-02420a000b23.png" alt="Produkt 1">
+                <p>Papučky barefoot růžové</p>
+                <div class="flex justify-start align-center gap-10">
+                    <span>529 Kč</span>
+                    <span>699 Kč</span>
+                    <div class="flex justify-end align-center">
+                        <a href="./product-detail.html"><img src="./z-ps/Group%206.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./img2/7c895c56-e3fd-11eb-8d3f-02420a000b23.png" alt="Produkt 1">
+                <p>Sandálky modré umělé</p>
+                <div class="flex justify-start align-center gap-10">
+                    <span>529 Kč</span>
                     <span>699 Kč</span>
                     <div class="flex justify-end align-center">
                         <a href="./product-detail.html"><img src="./z-ps/Group%206.png" alt=""></a>
@@ -99,9 +128,42 @@
             </div>
             <div class="product-card">
                 <img src="./img2/8291fafa-e3fd-11eb-8d3f-02420a000b23.png" alt="Produkt 1">
-                <p>Dětské tenisky Runster</p>
+                <p>Netlačící boty s vysokou špičkou</p>
                 <div class="flex justify-start align-center gap-10">
-                    <span>899 Kč</span>
+                    <span>529 Kč</span>
+                    <span>699 Kč</span>
+                    <div class="flex justify-end align-center">
+                        <a href="./product-detail.html"><img src="./z-ps/Group%206.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./img2/15146773-eb93-11eb-9461-02420a000b04.png" alt="Produkt 1">
+                <p>Papučky barefoot hnědé kožené</p>
+                <div class="flex justify-start align-center gap-10">
+                    <span>529 Kč</span>
+                    <span>699 Kč</span>
+                    <div class="flex justify-end align-center">
+                        <a href="./product-detail.html"><img src="./z-ps/Group%206.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./img2/15146773-eb93-11eb-9461-02420a000b04.png" alt="Produkt 1">
+                <p>Papučky barefoot hnědé kožené</p>
+                <div class="flex justify-start align-center gap-10">
+                    <span>529 Kč</span>
+                    <span>699 Kč</span>
+                    <div class="flex justify-end align-center">
+                        <a href="./product-detail.html"><img src="./z-ps/Group%206.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="./img2/7c895c56-e3fd-11eb-8d3f-02420a000b23.png" alt="Produkt 1">
+                <p>Sandálky modré umělé</p>
+                <div class="flex justify-start align-center gap-10">
+                    <span>529 Kč</span>
                     <span>699 Kč</span>
                     <div class="flex justify-end align-center">
                         <a href="./product-detail.html"><img src="./z-ps/Group%206.png" alt=""></a>
@@ -110,64 +172,9 @@
             </div>
             <div class="product-card">
                 <img src="./img2/8291fafa-e3fd-11eb-8d3f-02420a000b23.png" alt="Produkt 1">
-                <p>Dětské tenisky Runster</p>
+                <p>Netlačící boty s vysokou špičkou</p>
                 <div class="flex justify-start align-center gap-10">
-                    <span>899 Kč</span>
-                    <span>699 Kč</span>
-                    <div class="flex justify-end align-center">
-                        <a href="./product-detail.html"><img src="./z-ps/Group%206.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="./img2/8291fafa-e3fd-11eb-8d3f-02420a000b23.png" alt="Produkt 1">
-                <p>Dětské tenisky Runster</p>
-                <div class="flex justify-start align-center gap-10">
-                    <span>899 Kč</span>
-                    <span>699 Kč</span>
-                    <div class="flex justify-end align-center">
-                        <a href="./product-detail.html"><img src="./z-ps/Group%206.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="./img2/8291fafa-e3fd-11eb-8d3f-02420a000b23.png" alt="Produkt 1">
-                <p>Dětské tenisky Runster</p>
-                <div class="flex justify-start align-center gap-10">
-                    <span>899 Kč</span>
-                    <span>699 Kč</span>
-                    <div class="flex justify-end align-center">
-                        <a href="./product-detail.html"><img src="./z-ps/Group%206.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="./img2/8291fafa-e3fd-11eb-8d3f-02420a000b23.png" alt="Produkt 1">
-                <p>Dětské tenisky Runster</p>
-                <div class="flex justify-start align-center gap-10">
-                    <span>899 Kč</span>
-                    <span>699 Kč</span>
-                    <div class="flex justify-end align-center">
-                        <a href="./product-detail.html"><img src="./z-ps/Group%206.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="./img2/8291fafa-e3fd-11eb-8d3f-02420a000b23.png" alt="Produkt 1">
-                <p>Dětské tenisky Runster</p>
-                <div class="flex justify-start align-center gap-10">
-                    <span>899 Kč</span>
-                    <span>699 Kč</span>
-                    <div class="flex justify-end align-center">
-                        <a href="./product-detail.html"><img src="./z-ps/Group%206.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="product-card">
-                <img src="./img2/8291fafa-e3fd-11eb-8d3f-02420a000b23.png" alt="Produkt 1">
-                <p>Dětské tenisky Runster</p>
-                <div class="flex justify-start align-center gap-10">
-                    <span>899 Kč</span>
+                    <span>529 Kč</span>
                     <span>699 Kč</span>
                     <div class="flex justify-end align-center">
                         <a href="./product-detail.html"><img src="./z-ps/Group%206.png" alt=""></a>
@@ -183,15 +190,99 @@
             <img src="./img/Group 295.svg" alt="Ikona" class="divider-icon">
             <span class="divider-line"></span>
         </div>
+        <div class="circles">
+            <a class="circle-group" href="#">
+                <div class="flex flex-center">
+                    <img src="./img/Group%20195.svg" alt="">
+                </div>
+                <h3>VŠE MÁME SKLADEM</h3>
+            </a>
+            <a class="circle-group" href="#">
+                <div class="flex flex-center">
+                    <img src="./img/Group%20196.svg" alt="">
+                </div>
+                <h3>DOPRAVA ZDARMA</h3>
+            </a>
+            <a class="circle-group" href="#">
+                <div class="flex flex-center">
+                    <img src="./img/Group%20293.svg" alt="">
+                </div>
+                <h3>JAK MĚŘIT VELIKOSTI</h3>
+            </a>
+        </div>
     </main>
     <footer>
-        <div class="mailing-list">
-            <h2>Nezmeškejte nové a výhodné akce</h2>
-            <h3>Zadejte svůj e-mail a obratem vám zašleme PDF s inspirací zdarma.</h3>
+        <div class="contact-form">
+            <h3>Nezmeškejte nové a výhodné akce</h3>
+            <p>Zadejte svůj email a obratem vám zašleme PDF s inspirací zdarma</p>
             <form action="#">
-                <input type="email" placeholder="         Zadej svůj email...">
-                <button>přihlásit</button>
+                <div class="input-wrapper">
+                    <img src="./img/6.png" alt="">
+                    <input type="email" name="email" id="email" placeholder="Zadej svůj email...">
+                </div>
+                <button class="btn-primary">přihlásit</button>
             </form>
+        </div>
+        <div class="footer-info">
+            <div>
+                <div class="about">
+                    <h5>O NÁS</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium adipisci aliquam amet animi aut blanditiis cum cumque cupiditate deleniti dolor dolorum ducimus est expedita inventore iure, minus nesciunt nostrum odio officia porro possimus praesentium, quae quasi quia quis quisquam, quod saepe sunt suscipit ullam vero voluptate voluptatum.</p>
+                    <img src="./img/Group%204.png" alt="logo">
+                </div>
+                <div class="offerings">
+                    <h5>NAŠE NABÍDKA</h5>
+                    <div>
+                        <div class="offerings-group">
+                            <h6>Dívčí</h6>
+                            <ul>
+                                <li><a href="#">Tenisky</a></li>
+                                <li><a href="#">Holinky</a></li>
+                                <li><a href="#">Sandály</a></li>
+                                <li><a href="#">Baleríny</a></li>
+                                <li><a href="#">Polobotky</a></li>
+                            </ul>
+                        </div>
+                        <div class="offerings-group">
+                            <h6>Chlapecké</h6>
+                            <ul>
+                                <li><a href="#">Tenisky</a></li>
+                                <li><a href="#">Holinky</a></li>
+                                <li><a href="#">Sandály</a></li>
+                                <li><a href="#">Baleríny</a></li>
+                                <li><a href="#">Polobotky</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-us">
+                <div>
+                    <h5>KONTAKTUJTE NÁS</h5>
+                    <div class="contact-info">
+                        <a>
+                            <img src="./img/6.svg" alt="">
+                            <span>info@nejlepsiboty.cz</span>
+                        </a>
+                        <a>
+                            <img src="./img/8.svg" alt="">
+                            <span>+420 777 666 555</span>
+                        </a>
+                        <div>
+                            <a>
+                                <img src="./img/facebook.svg" alt="">
+                            </a>
+                            <a>
+                                <img src="./img/Group%20153.svg" alt="">
+                            </a>
+                            <a>
+                                <img src="./img/twitter.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <p>Litvínovská 600, Praha 9, 190 00</p>
+                </div>
+            </div>
         </div>
     </footer>
 </body>

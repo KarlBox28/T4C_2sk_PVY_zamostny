@@ -31,3 +31,45 @@
     font-size: 16px;
     cursor: pointer;
 }
+
+/* Chatík */
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper img {
+    position: absolute; /* Prvek se vyjme z běžného toku stránky. Ostatní prvky ho „nevidí“, jako kdyby tam nebyl. */
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%); /* transform umožňuje prvek posunout, otočit, zvětšit… */
+    pointer-events: none;   /* aby na ikonu nešlo kliknout */
+    color: #aaa;
+    font-size: 18px;
+    filter: brightness(80%);
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 10px 10px 10px 40px; /* místo pro ikonku */
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+/* až sem */
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.divider-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #c2c9d6;
+}
+
+.divider-icon {
+    width: 24px;
+    height: 24px;
+    margin: 0 15px;
+}

@@ -1,0 +1,36 @@
+@media only screen and (max-width: 1380px) {
+    .circles {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .footer-info {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .footer-info > div:nth-child(1) {
+        width: 100%;
+    }
+    .footer-info > div:last-child {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .footer-info > div:nth-child(1) {
+        flex-direction: column;
+        align-items: center;
+    }
+    .offerings {
+        margin-bottom: 45px;
+    }
+    .contact-us > div{
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 430px) {
+
+}

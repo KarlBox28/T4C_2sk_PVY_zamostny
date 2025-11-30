@@ -1,0 +1,32 @@
+@media only screen and (max-width: 1380px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .product-categories {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-category {
+        width: 100%;
+        height: 500px;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .carousel {
+        display: none;
+    }
+    .product-category {
+        width: 100%;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+@media only screen and (max-width: 430px) {
+
+}

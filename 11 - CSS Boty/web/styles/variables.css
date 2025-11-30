@@ -4,8 +4,22 @@
     --color-secondary: #304068;
     --font-family: 'Libre Franklin', serif;
     --color-tertiary: #b4bed5;
+    --tablet-treshold: 1380px;
+    --mobile-treshold: 430px;
 }
 
 * {
      font-family: var(--font-family), serif;
+}
+
+@media only screen and (max-width: 1380px) {
+    .no-tablet {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .no-mobile {
+        display: none;
+    }
 }

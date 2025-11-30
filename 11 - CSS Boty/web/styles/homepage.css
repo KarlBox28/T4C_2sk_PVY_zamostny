@@ -1,7 +1,7 @@
 @import url('variables.css');
 main {
     margin: auto;
-    width: 80%;
+    width: 70%;
 }
 
 .carousel {
@@ -34,24 +34,7 @@ main {
 .carousel div button {
     width: 180px;
 }
-.divider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 20px 0;
-}
 
-.divider-line {
-  flex-grow: 1;
-  height: 1px;
-  background-color: #c2c9d6;
-}
-
-.divider-icon {
-  width: 24px;
-  height: 24px;
-  margin: 0 15px;
-}
 .product-categories {
     display: flex;
     flex-direction: row;
@@ -161,4 +144,39 @@ h2 {
     color: var(--color-secondary);
     font-size: 18px;
 }
+.circles {
+    display: flex;
+    justify-content: space-between;
+}
+.circle-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+}
+
+.circle-group > div {
+    background-color: var(--color-secondary);
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
+}
+.circle-group div img {
+    width: 45px;
+    height: auto;
+}
+.circle-group h3 {
+    font-size: 20px;
+    color: var(--color-secondary);
+}
+.circle-group:hover div {
+    background-color: var(--color-primary);
+}
+.circle-group:hover h3 {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+
 

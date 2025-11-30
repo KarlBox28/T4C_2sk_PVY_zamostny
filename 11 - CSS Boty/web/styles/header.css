@@ -1,6 +1,10 @@
 @import "utility.css";
 @import "variables.css";
 @import "css-reset.css";
+.navbar-container {
+    margin: auto;
+    width: 70%;
+}
 .contact-login {
     display: flex;
     flex-direction: row;
@@ -22,8 +26,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 80%;
-    margin: auto;
     padding-top: 23px;
     padding-bottom: 23px;
 }
@@ -31,24 +33,19 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    width: 350px;
 }
-.over-navbar div img{
+.over-navbar div img {
     width: 32px;
     height: 32px;
 }
 .over-navbar input {
-    background-image: url(../img/loupe.svg);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: contain;
     height: 34px;
     width: 210px;
     border: 1px solid #d6d6d6;
 }
-nav {
-    width: 80%;
-    margin: auto;
+.over-navbar div form div img {
+    width: 25px;
+    height: 25px;
 }
 nav a {
     text-decoration: none;
@@ -86,7 +83,12 @@ nav ul li:hover {
     border-color: var(--color-primary);
     border-right: 2px solid var(--color-primary);
 }
+@media only screen and (max-width: 1380px) {
+    nav ul li:nth-child(4) {
+        border-right: 1px solid var(--color-tertiary);
+    }
+    nav ul li {
+        width: 25%;
+    }
 
-@media only screen and (max-width: 600px) {
-    
 }
