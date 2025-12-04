@@ -17,15 +17,15 @@
     .footer-info > div:last-child {
         width: 100%;
     }
+    .offerings {
+        margin-bottom: 45px;
+    }
 }
 
 @media only screen and (max-width: 800px) {
     .footer-info > div:nth-child(1) {
         flex-direction: column;
         align-items: center;
-    }
-    .offerings {
-        margin-bottom: 45px;
     }
     .contact-us > div{
         align-items: center;

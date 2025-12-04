@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/utility.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/demand.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="./styles/header-responsive.css">
+  <link rel="stylesheet" href="./styles/demand-responsive.css">
+  <link rel="stylesheet" href="./styles/footer-responsive.css">
+  <title>Document</title>
+</head>
+<body>
+<header>
+  <div class="contact-login">
+    <figure>
+      <img src="img/8.svg" alt="" class="no-mobile">
+      <figcaption><a href="tel:+420777666555">+420 777 666 555</a>    | <a href="mailto:info@nejlepsiboty.cz">info@nejlepsiboty.cz</a></figcaption>
+    </figure>
+    <a href="#">
+      <figure>
+        <img src="img/profile-user.svg" alt="">
+        <figcaption class="no-mobile">Přihlásit se</figcaption>
+      </figure>
+    </a>
+  </div>
+  <div class="navbar-container">
+    <div class="over-navbar">
+      <a href="./index.html"><img src="img/Group%204.svg" alt=""></a>
+      <div>
+        <form action="search.php">
+          <div class="input-wrapper">
+            <img src="./img/loupe.svg" alt="">
+            <input type="text" placeholder="Vyhledat zboží...">
+          </div>
+        </form>
+        <img class="loupe" src="./img/loupe.svg" alt="">
+        <a href="demand.html"><img src="./z-ps/Group%206.png" alt=""></a>
+        <img src="./z-ps/heart.png" alt="">
+      </div>
+    </div>
+    <nav>
+      <a href="#">
+        <span>Chlapecké <img src="img/Group%20169.svg" alt=""></span>
+      </a>
+      <a href="#">
+        <span>Dívčí <img src="img/Group%20171.svg" alt=""></span>
+      </a>
+      <a href="#">
+        <span>Doplňky</span>
+      </a>
+      <a href="#">
+        <span>Ostatní</span>
+      </a>
+      <a class="no-tablet" href="#">
+        <span>Kontakt</span>
+      </a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="breadcrumbs">
+    <a href="index.html">Domů</a>
+    <span>></span>
+    <a href="#">Tenisky</a>
+  </div>
+  <div class="kid-image"></div>
+  <form action="demand.php" method="post">
+    <div>
+      <div>
+        <label for="name">Jméno</label>
+        <input type="text" id="name" name="name">
+      </div>
+      <div>
+        <label for="surname">Příjmení</label>
+        <input type="text" id="surname" name="surname">
+      </div>
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email">
+    </div>
+    <div>
+      <label for="telephone">Telefon</label>
+      <input type="tel" id="telephone" name="telephone">
+    </div>
+    <div>
+      <label for="country">Země</label>
+      <select id="country" name="country">
+        <option value="" selected disabled>Vyber zemi</option>
+        <option value="CZ">Česká republika</option>
+        <option value="SK">Slovenská republika</option>
+      </select>
+    </div>
+    <div>
+      <span>Způsob platby</span>
+      <div>
+        <input type="radio" id="hotove" name="payment" value="hotove">
+        <label for="hotove">Hotově</label>
+      </div>
+      <div>
+        <input type="radio" id="prevodem" name="payment" value="prevodem" checked>
+        <label for="prevodem">Převodem</label>
+      </div>
+      <div>
+        <input type="radio" id="kartou" name="payment" value="kartou">
+        <label for="kartou">Kartou</label>
+      </div>
+    </div>
+  </form>
+</main>
+<footer>
+  <div class="contact-form">
+    <h3>Nezmeškejte nové a výhodné akce</h3>
+    <p>Zadejte svůj email a obratem vám zašleme PDF s inspirací zdarma</p>
+    <form action="newsletter.php" method="post">
+      <div class="input-wrapper">
+        <img src="./img/6.png" alt="">
+        <input type="email" name="email" placeholder="Zadej svůj email..." required>
+      </div>
+      <button class="btn-primary">přihlásit</button>
+    </form>
+  </div>
+  <div class="footer-info">
+    <div>
+      <div class="about">
+        <h5>O NÁS</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium adipisci aliquam amet animi aut blanditiis cum cumque cupiditate deleniti dolor dolorum ducimus est expedita inventore iure, minus nesciunt nostrum odio officia porro possimus praesentium, quae quasi quia quis quisquam, quod saepe sunt suscipit ullam vero voluptate voluptatum.</p>
+        <a href="index.html"><img src="./img/Group%204.png" alt="logo"></a>
+      </div>
+      <div class="offerings">
+        <h5>NAŠE NABÍDKA</h5>
+        <div>
+          <div class="offerings-group">
+            <h6>Dívčí</h6>
+            <ul>
+              <li><a href="#">Tenisky</a></li>
+              <li><a href="#">Holinky</a></li>
+              <li><a href="#">Sandály</a></li>
+              <li><a href="#">Baleríny</a></li>
+              <li><a href="#">Polobotky</a></li>
+            </ul>
+          </div>
+          <div class="offerings-group">
+            <h6>Chlapecké</h6>
+            <ul>
+              <li><a href="#">Tenisky</a></li>
+              <li><a href="#">Holinky</a></li>
+              <li><a href="#">Sandály</a></li>
+              <li><a href="#">Baleríny</a></li>
+              <li><a href="#">Polobotky</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-us">
+      <div>
+        <h5>KONTAKTUJTE NÁS</h5>
+        <div class="contact-info">
+          <a href="mailto:info@nejlepsiboty.cz">
+            <img src="./img/6.svg" alt="">
+            <span>info@nejlepsiboty.cz</span>
+          </a>
+          <a href="tel:+420777666555">
+            <img src="./img/8.svg" alt="">
+            <span>+420 777 666 555</span>
+          </a>
+          <div>
+            <a href="https://www.facebook.com/SSSVT">
+              <img src="./img/facebook.svg" alt="">
+            </a>
+            <a href="https://www.instagram.com/sssvt_cz/">
+              <img src="./img/Group%20153.svg" alt="">
+            </a>
+            <a href="https://guthib.com">
+              <img src="./img/twitter.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <p>Litvínovská 600, Praha 9, 190 00</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

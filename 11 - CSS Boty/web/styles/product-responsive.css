@@ -13,6 +13,14 @@
         gap: 20px;
         align-items: center;
     }
+    .product-description {
+        width: 100%;
+    }
+    
+    .product-details table {
+        width: 100%;
+        margin: 0 5%;
+    }
 }
 @media only screen and (max-width: 1100px) {
     .product {
@@ -49,6 +57,9 @@
         margin-left: 5%;
         margin-right: 5%;
     }
+    .no-level-2 {
+        display: none;
+    }
 }
 @media only screen and (max-width: 800px) {
     .gallery {
@@ -57,9 +68,6 @@
     }
     .product-info {
         margin-top: 100px;
-    }
-    .zmiz {
-        display: none;
     }
 }
 @media only screen and (max-width: 430px) {
@@ -72,5 +80,8 @@
     }
     .product-info {
         margin-top: 0;
+    }
+    .product-details table {
+        width: 380px;
     }
 }

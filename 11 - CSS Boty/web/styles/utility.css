@@ -20,6 +20,9 @@
 .align-center {
     align-items: center;
 }
+.align-end {
+    align-items: flex-end;
+}
 .gap-10 {
     gap: 10px;
 }
