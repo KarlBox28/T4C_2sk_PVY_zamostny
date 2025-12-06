@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/utility.css">
-  <link rel="stylesheet" href="./styles/header.css">
-  <link rel="stylesheet" href="./styles/demand.css">
-  <link rel="stylesheet" href="./styles/footer.css">
-  <link rel="stylesheet" href="./styles/header-responsive.css">
-  <link rel="stylesheet" href="./styles/demand-responsive.css">
-  <link rel="stylesheet" href="./styles/footer-responsive.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/utility.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/demand.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/header-responsive.css">
+    <link rel="stylesheet" href="./styles/demand-responsive.css">
+    <link rel="stylesheet" href="./styles/footer-responsive.css">
+    <title>Document</title>
 </head>
 <body>
 <header>
@@ -61,55 +61,66 @@
   </div>
 </header>
 <main>
-  <div class="breadcrumbs">
-    <a href="index.html">Domů</a>
-    <span>></span>
-    <a href="#">Tenisky</a>
-  </div>
-  <div class="kid-image"></div>
-  <form action="demand.php" method="post">
-    <div>
-      <div>
-        <label for="name">Jméno</label>
-        <input type="text" id="name" name="name">
-      </div>
-      <div>
-        <label for="surname">Příjmení</label>
-        <input type="text" id="surname" name="surname">
-      </div>
+    <div class="breadcrumbs">
+        <a href="index.html">Domů</a>
+        <span>></span>
+        <a href="#">Tenisky</a>
     </div>
-    <div>
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email">
+    <div class="wrapper">
+        <img src="./z-ps/Kido.png" class="kid-image" alt="">
+        <form action="demand.php" method="post">
+            <h1>Poptávkový formulář</h1>
+            <p>Vyplňte formulář níže a my se Vám ozveme, jakmile to půjde.</p>
+            <div class="name-surname">
+                <div class="form-group">
+                    <label for="name">Jméno</label>
+                    <input type="text" id="name" name="name" placeholder="Zadejte své jméno..." required>
+                </div>
+                <div class="form-group">
+                    <label for="surname">Příjmení</label>
+                    <input type="text" id="surname" name="surname" placeholder="Zadejte své příjmení..." required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Zadejte svůj email..." required>
+                <p class="error-text">Zadaný email nemá správný formát</p>
+            </div>
+            <div class="form-group">
+                <label for="telephone">Telefon</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="Zadejte svůj telefon..." required>
+            </div>
+            <div class="form-group">
+                <label for="country">Země</label>
+                <select id="country" name="country" required>
+                    <option value="" selected disabled>Vyber zemi</option>
+                    <option value="CZ">Česká republika</option>
+                    <option value="SK">Slovenská republika</option>
+                </select>
+            </div>
+            <p class="asterisk-after">Způsob platby</p>
+            <div class="radios">
+                <div class="radio-group">
+                    <input type="radio" id="hotove" name="payment" value="hotove">
+                    <label for="hotove">Hotově</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="prevodem" name="payment" value="prevodem" checked>
+                    <label for="prevodem">Převodem</label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="kartou" name="payment" value="kartou">
+                    <label for="kartou">Kartou</label>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="">
+                    <button type="button">Zpět</button>
+                </a>
+                <button type="submit" class="btn-primary">Pokračovat</button>
+            </div>
+        </form>
     </div>
-    <div>
-      <label for="telephone">Telefon</label>
-      <input type="tel" id="telephone" name="telephone">
-    </div>
-    <div>
-      <label for="country">Země</label>
-      <select id="country" name="country">
-        <option value="" selected disabled>Vyber zemi</option>
-        <option value="CZ">Česká republika</option>
-        <option value="SK">Slovenská republika</option>
-      </select>
-    </div>
-    <div>
-      <span>Způsob platby</span>
-      <div>
-        <input type="radio" id="hotove" name="payment" value="hotove">
-        <label for="hotove">Hotově</label>
-      </div>
-      <div>
-        <input type="radio" id="prevodem" name="payment" value="prevodem" checked>
-        <label for="prevodem">Převodem</label>
-      </div>
-      <div>
-        <input type="radio" id="kartou" name="payment" value="kartou">
-        <label for="kartou">Kartou</label>
-      </div>
-    </div>
-  </form>
 </main>
 <footer>
   <div class="contact-form">
