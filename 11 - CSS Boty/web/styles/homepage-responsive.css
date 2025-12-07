@@ -34,6 +34,11 @@
     .gallery div:nth-child(6) {
         display: none;
     }
+    main {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
 @media only screen and (max-width: 430px) {
     .gallery {

@@ -1,0 +1,33 @@
+@media only screen and (max-width: 1380px) {
+
+}
+@media only screen and (max-width: 1100px) {
+    .name-surname {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .kid-image {
+        display: none;
+    }
+    main form {
+        width: 100%;
+    }
+    main {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .radios {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+@media only screen and (max-width: 430px) {
+
+}

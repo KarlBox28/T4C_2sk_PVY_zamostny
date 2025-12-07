@@ -64,7 +64,7 @@
     <div class="breadcrumbs">
         <a href="index.html">Domů</a>
         <span>></span>
-        <a href="#">Tenisky</a>
+        <a href="#">Poptávka</a>
     </div>
     <div class="wrapper">
         <img src="./z-ps/Kido.png" class="kid-image" alt="">
@@ -75,10 +75,12 @@
                 <div class="form-group">
                     <label for="name">Jméno</label>
                     <input type="text" id="name" name="name" placeholder="Zadejte své jméno..." required>
+                    <p class="error-text">Jméno je povinný údaj</p>
                 </div>
                 <div class="form-group">
                     <label for="surname">Příjmení</label>
                     <input type="text" id="surname" name="surname" placeholder="Zadejte své příjmení..." required>
+                    <p class="error-text">Příjmení je povinný údaj</p>
                 </div>
             </div>
             <div class="form-group">
@@ -89,6 +91,7 @@
             <div class="form-group">
                 <label for="telephone">Telefon</label>
                 <input type="tel" id="telephone" name="telephone" placeholder="Zadejte svůj telefon..." required>
+                <p class="error-text">Zadaný telefon nemá správný formát</p>
             </div>
             <div class="form-group">
                 <label for="country">Země</label>
@@ -97,8 +100,9 @@
                     <option value="CZ">Česká republika</option>
                     <option value="SK">Slovenská republika</option>
                 </select>
+                <p class="error-text">Prosím vyberte zemi</p>
             </div>
-            <p class="asterisk-after">Způsob platby</p>
+            <p class="payment-label">Způsob platby:</p>
             <div class="radios">
                 <div class="radio-group">
                     <input type="radio" id="hotove" name="payment" value="hotove">
@@ -114,10 +118,14 @@
                 </div>
             </div>
             <div class="buttons">
-                <a href="">
-                    <button type="button">Zpět</button>
+                <a href="index.html" class="button-wrapper">
+                    <img src="./z-ps/arrow-red.png" alt="">
+                    <button type="button" class="button-back">Zpět</button>
                 </a>
-                <button type="submit" class="btn-primary">Pokračovat</button>
+                <div class="button-wrapper">
+                    <img src="./z-ps/arrow-white.png" alt="">
+                    <button type="submit" class="button-next">Pokračovat</button>
+                </div>
             </div>
         </form>
     </div>

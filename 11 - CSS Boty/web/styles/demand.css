@@ -34,7 +34,7 @@ h1 + p {
     font-size: 16px;
     color: var(--color-secondary);
 }
-form {
+main form {
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -55,17 +55,47 @@ form {
 .form-group select option:first-child {
     color: var(--color-tertiary);
     font-size: 16px;
+}
+.form-group select option {
+    color: var(--color-secondary);
+    font-size: 16px;
 
 }
-.form-group > p {
+.error-text {
+    font-size: 14px;
+    color: var(--color-primary);
     display: none;
+}
+input:user-invalid ~ .error-text,
+select:user-invalid ~ .error-text {
+    display: block;
 }
 .form-group input,
 .form-group select{
     width: 100%;
     padding: 10px;
     border: 1px solid var(--color-tertiary);
+    font-size: 16px;
 }
+.form-group select:invalid {
+    color: #ccc;
+}
+.form-group select:active {
+    color: var(--color-secondary);
+}
+/* vymyslel Chatík */
+.form-group select {
+    color: var(--color-secondary);
+    appearance: none; /* Skryje defaultní šipku */
+    padding-right: 30px; /* prostor pro šipku */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+
+    /* Vlastní šipka ▼ */
+    background-image: url("data:image/svg+xml;utf8,\<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'>\<path fill='%23304068' d='M0 0l5 6 5-6z'/>\</svg>");
+}
+/* až sem */
 .form-group label {
     color: var(--color-secondary);
 }
@@ -78,3 +108,66 @@ form {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.radio-group label {
+    color: var(--color-secondary);
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 1px;
+}
+.radio-group input {
+    width: 23px;
+    height: 23px;
+}
+.payment-label {
+    font-size: 16px;
+    color: var(--color-secondary);
+    font-weight: 500;
+}
+/* Upravený chatík */
+.button-wrapper {
+    position: relative;
+}
+.button-wrapper img {
+    position: absolute; /* Prvek se vyjme z běžného toku stránky. Ostatní prvky ho „nevidí“, jako kdyby tam nebyl. */
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%); /* transform umožňuje prvek posunout, otočit, zvětšit… */
+    pointer-events: none;   /* aby na ikonu nešlo kliknout */
+    color: #aaa;
+    height: auto;
+    width: 15px;
+}
+.button-wrapper button {
+    padding: 10px 10px 10px 30px; /* místo pro ikonku */
+}
+/* až sem */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.button-back {
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+    color: var(--color-secondary);
+    font-size: 16px;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+}
+.button-next {
+    background-color: var(--color-primary);
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+}
+
