@@ -38,7 +38,7 @@
         </form>
         <img class="loupe" src="./img/loupe.svg" alt="">
         <a href="demand.html"><img src="./z-ps/Group%206.png" alt=""></a>
-        <img src="./z-ps/heart.png" alt="">
+        <a href="#"><img src="./z-ps/heart.png" alt=""></a>
       </div>
     </div>
     <nav>
@@ -90,7 +90,7 @@
             </div>
             <div class="form-group">
                 <label for="telephone">Telefon</label>
-                <input type="tel" id="telephone" name="telephone" placeholder="Zadejte svůj telefon..." required>
+                <input type="tel" id="telephone" name="telephone" placeholder="Zadejte svůj telefon..." pattern="^(\+?420|\+?421)?\s*([0-9]{3}\s*){3}$" required>
                 <p class="error-text">Zadaný telefon nemá správný formát</p>
             </div>
             <div class="form-group">
@@ -131,17 +131,6 @@
     </div>
 </main>
 <footer>
-  <div class="contact-form">
-    <h3>Nezmeškejte nové a výhodné akce</h3>
-    <p>Zadejte svůj email a obratem vám zašleme PDF s inspirací zdarma</p>
-    <form action="newsletter.php" method="post">
-      <div class="input-wrapper">
-        <img src="./img/6.png" alt="">
-        <input type="email" name="email" placeholder="Zadej svůj email..." required>
-      </div>
-      <button class="btn-primary">přihlásit</button>
-    </form>
-  </div>
   <div class="footer-info">
     <div>
       <div class="about">
@@ -199,7 +188,7 @@
             </a>
           </div>
         </div>
-        <p>Litvínovská 600, Praha 9, 190 00</p>
+        <address>Litvínovská 600, Praha 9, 190 00</address>
       </div>
     </div>
   </div>
