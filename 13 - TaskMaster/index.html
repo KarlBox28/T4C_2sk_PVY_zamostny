@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartTasker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-container">
+    <header>
+        <h1>SmartTasker</h1>
+        <p id="quote-display">"Programování je myšlení, ne psaní kódu."</p>
+    </header>
+
+    <section class="input-section">
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Zadej nový úkol..." autocomplete="off">
+            <button type="submit" id="add-btn">Přidat</button>
+        </form>
+        <small id="error-message"></small>
+    </section>
+
+    <section class="search-section">
+        <input type="text" id="search-input" placeholder="Vyhledat úkol..." autocomplete="off">
+    </section>
+
+    <section class="task-section">
+        <ul id="task-list">
+            <li class="task-item">
+                <label class="task-body">
+                    <input type="checkbox" class="task-checkbox">
+                    <span class="task-text">Vytvořit dynamický seznam úkolů</span>
+                </label>
+                <button class="delete-btn">Odstranit</button>
+            </li>
+
+            <li class="task-item completed">
+                <label class="task-body">
+                    <input type="checkbox" class="task-checkbox" checked>
+                    <span class="task-text">Naučit se základy syntaxe JS</span>
+                </label>
+                <button class="delete-btn">Odstranit</button>
+            </li>
+        </ul>
+    </section>
+</div>
+
+<script src="src/index.js" type="module"></script>
+</body>
+</html>
