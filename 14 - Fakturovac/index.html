@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Fakturovač</h1>
+    </header>
+    <main>
+        <form class="main-form">
+            <div>
+                <h2>Základní</h2>
+                <div class="form-group">
+                    <label for="name">Jméno</label>
+                    <input type="text" name="name" id="name" placeholder="Jméno">
+                </div>
+                <div class="form-group">
+                    <label for="surname">Příjmení</label>
+                    <input type="text" name="surname" id="surname" placeholder="Příjmení">
+                </div>
+            </div>
+            <div>
+                <h2>Fakturační adresa</h2>
+                <div class="form-group">
+                    <label for="f-address">Adresa</label>
+                    <input type="text" name="fAddress" id="f-address" placeholder="Ulice a č.p.">
+                </div>
+                <div class="form-group">
+                    <label for="f-city">Město</label>
+                    <input type="text" name="fCity" id="f-city" placeholder="Město">
+                </div>
+                <div class="form-group">
+                    <label for="f-psc">PSČ</label>
+                    <input type="text" name="fPsc" id="f-psc" placeholder="123 45" pattern="^\d{3}\s\d{2}$">
+                </div>
+            </div>
+            <div>
+                <label for="same">Doručovací adresa je shodná s fakturační</label>
+                <input type="checkbox" id="same" name="deliverySameAsInvoice">
+            </div>
+            <div>
+                <h2>Doručovací adresa</h2>
+                <div class="form-group">
+                    <label for="d-address">Adresa</label>
+                    <input type="text" name="dAddress" id="d-address" placeholder="Ulice a č.p.">
+                </div>
+                <div class="form-group">
+                    <label for="d-city">Město</label>
+                    <input type="text" name="dCity" id="d-city" placeholder="Město">
+                </div>
+                <div class="form-group">
+                    <label for="d-psc">PSČ</label>
+                    <input type="text" name="dPsc" id="d-psc" placeholder="123 45" pattern="^\d{3}\s\d{2}$">
+                </div>
+            </div>
+            <div>
+                <h2>Způsob dodání</h2>
+                <div class="radio-group">
+                    <label for="dpd">DDP Kurýr na Adresu</label>
+                    <input type="radio" id="dpd" name="delivery" value="DdpNaAdresu">
+                </div>
+                <div class="radio-group">
+                    <label for="cp">Česká Pošta</label>
+                    <input type="radio" id="cp" name="delivery" value="CeskaPosta">
+                </div>
+                <div class="radio-group">
+                    <label for="zasilkovna">Zásilkovna na adresu</label>
+                    <input type="radio" id="zasilkovna" name="delivery" value="ZasilkovnaNaAdresu">
+                </div>
+            </div>
+            <div>
+                <label for="gdpr">Souhlasím s GDPR a obchodními podmínkami</label>
+                <input type="checkbox" id="gdpr" name="gdpr">
+            </div>
+            <button>Odeslat objednávku</button>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
