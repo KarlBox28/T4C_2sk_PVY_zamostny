@@ -1,49 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Timesheet Manager</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+<div class="container">
+
     <header>
         <h1>Timesheet Manager</h1>
     </header>
-    <main>
-        <form class="form">
-            <input type="text" name="task-name" placeholder="Task name">
-            <input type="time" name="start-time" placeholder="Start time">
-            <button type="submit">Add Task</button>
-            <input type="text" name="description" placeholder="Description">
 
+    <section class="card">
+        <h2>Nový úkol</h2>
+        <form id="taskForm">
+            <input type="text" id="taskName" placeholder="Zadej název úkolu..." required>
+            <input type="datetime-local" id="taskStart">
+            <button type="submit" class="btn-primary">Spustit</button>
         </form>
-        <div class="detail">
-            <!--
-            <div class="task-detail">
-                <span>Programování aplikace</span>
-                <span>8:05</span>
-                <span>0:50:25</span>
-                <button>Ukončit</button>
-            </div>
-            -->
-        </div>
-        <table class="history">
+    </section>
+
+    <section class="card active-card">
+        <h2>Aktuální úkol</h2>
+        <div id="currentTask">Žádný aktivní úkol</div>
+    </section>
+
+    <section class="card">
+        <h2>Historie</h2>
+        <table>
             <thead>
-                <th>Název úkolu</th>
-                <th>Čas zahájení</th>
-                <th>Čas ukončení</th>
-                <th>Strávený čas</th>
-            </thead>
-            <tbody>
                 <tr>
-                    <td>Progamování aplikace</td>
-                    <td>8:05</td>
-                    <td>8:15</td>
-                    <td>0:10</td>
+                    <th>Název</th>
+                    <th>Začátek</th>
+                    <th>Konec</th>
+                    <th>Doba</th>
+                    <th>Akce</th>
                 </tr>
-            </tbody>
+            </thead>
+            <tbody id="historyTable"></tbody>
         </table>
-        <script src="script.js"></script>
-    </main>
+    </section>
+
+    <section class="card total-card">
+        Celkový čas: <span id="totalTime">00:00:00</span>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
