@@ -1,0 +1,19 @@
+{
+  "name": "node_intro",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Karel Zámostný",
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "dev": "node index.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "colors": "^1.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^10.0.2"
+  }
+}
