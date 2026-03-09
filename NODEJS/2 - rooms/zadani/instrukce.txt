@@ -1,0 +1,31 @@
+Seznam endpointů:
+
+# Místnosti
+/api/rooms - HttpPost/HttpGet - Vrátí seznam místností dle filtrovacího objektu (nějaké Dto).
+/api/rooms - HttpPost - Založí novou místnost
+/api/rooms/:id - HttpDelete - Smaže místnost dle Id. Vrátí 404 pokud místnost neexistuje.
+/api/rooms - HttpPut - Přeuloží data k místnosti
+
+# Zařízení
+/api/equipment/:id - HttpGet - Vrátí detail zařízení
+/api/equipment/ - HttpPost / HttpDelete - Přidá/smaže zařízení
+/api/equipment/:roomId - HttpPost/HttpGet - Vrátí seznam zařízení pro danou místnost dle filtračního objektu
+/api/equipment/autocomplete - HttpGet - Vrátí string[] názvů zařízení, které v DB existují.
+
+---
+Funkce:
+
+Seznam místností:
+Stránka se seznamem místnosti, kde v tabulce ukazuje i počet zařízení v dané místnosti (přes JOIN). 
+
+Detail místnosti:
+Detail místnosti, kde se dají upravovovat data k místnosti a aktualizovat seznam zařízení pro místnost.
+
+Seznam veškerého vybavení dle místnosti:
+
+Např. níže. Chceme vypsat seznam všech místností (vč. těch, kde nic není). Na toto použijeme JOIN.
+Budova,Číslo místnosti,Typ,Vybavení,Množství
+Budova A,A101,Lecture Hall,Projektor Epson,1
+Budova A,A101,Lecture Hall,Ozvučení Bose,1
+Budova A,A102,Lab,Mikroskop,12
+Budova B,B205,Seminar Room,(není definováno),0

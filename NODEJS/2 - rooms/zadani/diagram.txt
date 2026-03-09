@@ -1,0 +1,18 @@
+Table Room {
+  Id         int     [pk, increment]
+  RoomNumber varchar [not null, unique]
+  Building   varchar [not null]
+  Capacity   int     [not null]
+  Type       varchar [not null, default: 'Seminar Room', note: 'Lecture Hall | Lab | Seminar Room | Conference Room']
+}
+
+Table Equipment {
+  Id          int     [pk, increment]
+  Name        varchar [not null]
+  Description text
+  Quantity    int     [not null, default: 1]
+  ImageUrl    varchar
+  RoomId      int
+}
+
+Ref: Equipment.RoomId > Room.Id [delete: set null]
